@@ -26,36 +26,36 @@ function Navbar() {
                 <h3 className="navbar-desc">FullStack Developer</h3>
                </div>
             <div className="navbar-navContainer">
-                <Link to={"/#Home"}>
-                    <button className="navItem">
+                <Link to={"/#Home"} style={{ textDecoration: 'none' }}>
+                    <button className="navItem hvr-bounce-to-right">
                         <BiHomeAlt className="navItem-icon"/>
                         <h3 className="navItem-text">Home</h3>
                     </button>
                 </Link>
 
-                <Link to={"/#About"}>
-                    <button className="navItem">
+                <Link to={"/#About"} style={{ textDecoration: 'none' }}>
+                    <button className="navItem hvr-bounce-to-right">
                         <BiHappyBeaming className="navItem-icon"/>
                         <h3 className="navItem-text">About</h3>
                     </button>
                 </Link>
 
-                <Link to={"/#Portfolio"}>
-                    <button className="navItem">
+                <Link to={"/#Portfolio"} style={{ textDecoration: 'none' }}>
+                    <button className="navItem hvr-bounce-to-right">
                         <BiCodeAlt className="navItem-icon"/>
                         <h3 className="navItem-text">Portfolio</h3>
                     </button>
                 </Link>
 
-                <Link to={"/#Stats"}>
-                    <button className="navItem">
+                <Link to={"/#Stats"} style={{ textDecoration: 'none' }}>
+                    <button className="navItem hvr-bounce-to-right">
                         <BiBarChartSquare className="navItem-icon"/>
                         <h3 className="navItem-text">Stats</h3>
                     </button>
                 </Link>
 
-                <Link to={"/#Contact"}>
-                    <button className="navItem">
+                <Link to={"/#Contact"} style={{ textDecoration: 'none' }}>
+                    <button className="navItem hvr-bounce-to-right">
                         <BiEnvelope className="navItem-icon"/>
                         <h3 className="navItem-text">Contact</h3>
                     </button>

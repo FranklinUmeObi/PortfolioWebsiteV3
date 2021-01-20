@@ -1,11 +1,22 @@
-import background from "./Assets/BackgroundImages/bg1.png";
 import './App.css';
+import Navbar from "./Components/Navbar.js"
+import MainPage from "./Components/MainPage.js"
+
+import { HashRouter as Router, Route} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <p>My portfolio</p>
-    </div>
+
+    <Router>
+      <div className="App">
+      <Navbar/>
+
+        <Route exact={true} path="/" render={() => (<MainPage/>)}/>
+        
+
+
+      </div>
+    </Router>
   );
 }
 

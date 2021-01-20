@@ -1,0 +1,59 @@
+.navbar{
+position: fixed;
+height: 90vh;
+width: 270px;
+top: 50%;
+left: 6vw;
+margin-top: -45vh; /* Negative half of height. */
+align-items: center;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .navbar{
+        position: relative;
+        margin-top: 60px;
+        left: 50%;
+        width: 320px;
+        margin-left: -160px;
+    }
+  }
+
+
+
+.navbar-avatarContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.navbar-avatarColour{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-avatar{
+    width: 130px;
+}
+.navbar-header{
+   text-align: center;
+   padding-top: 10px;
+}
+
+
+
+.navbar-name{
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+.navbar-desc{
+    color: #f3f3f3;
+    font-size: 20px;
+}

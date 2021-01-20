@@ -7,7 +7,7 @@ body {
   padding: 0;
 
   /** background image */
-  background-image: url("./Assets/BackgroundImages/bg1.png");
+  background-image: url("./Assets/Images/bg1.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

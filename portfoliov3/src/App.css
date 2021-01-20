@@ -1,16 +1,20 @@
-*{
+* {
   margin: 0;
   padding: 0;
   color: black;
 }
 
-
-.glass{
-background-image: linear-gradient(rgba( 255, 255, 255, 0.5 ), rgba( 255, 255, 255, 0.1 ));
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 8.0px );
--webkit-backdrop-filter: blur( 8.0px );
-border-radius: 25px;
-border: 1.5px solid rgba( 255, 255, 255, 0.18 );
+.glass {
+  background-image: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0.3) 21%,
+    rgba(255, 255, 255, 0.18857965549501055) 100%
+  );
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
-

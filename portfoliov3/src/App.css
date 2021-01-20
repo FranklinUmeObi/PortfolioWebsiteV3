@@ -8,13 +8,13 @@
   background-image: rgb(255, 255, 255);
   background-image: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.7) 0%,
-    rgba(255, 255, 255, 0.3) 21%,
-    rgba(255, 255, 255, 0.18857965549501055) 100%
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.3) 30%,
+    rgba(255, 255, 255, 0.05) 100%
   );
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 25px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }

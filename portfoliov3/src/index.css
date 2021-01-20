@@ -12,7 +12,8 @@ body {
   background-image: url("./Assets/Images/bg2.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 105% 100%;
+
 }
 
 code {

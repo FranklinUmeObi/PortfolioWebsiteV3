@@ -28,10 +28,75 @@
     }
   }
 
-
+/* 
+---------------------------------------------
+HomeSection
+---------------------------------------------
+ */
 
 .homepage{
     height: 90vh;
     margin-top: 5vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
+
+.hompage-title{
+    font-size: 3rem;
+    margin-top: 70px;
+}
+
+.hompage-textContainer{
+    text-align: center;
+    align-items: center;
+}
+
+.react-typewriter-text{
+    text-align: center !important;
+}
+
+.homepage-iconContainer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+    margin-top: auto;
+    margin-bottom: 60px;
+}
+
+.homepage-icon{
+    width: 35px;
+    height: 35px;
+}
+
+
+/* Bounce In */
+.hvr-bounce-in {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
+  
+
+
+
+
+/* 
+---------------------------------------------
+AboutSection
+---------------------------------------------
+ */

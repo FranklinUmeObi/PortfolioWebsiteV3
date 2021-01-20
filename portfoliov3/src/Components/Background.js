@@ -7,8 +7,8 @@ function Background() {
       <svg
         className="floatersSVG"
         width="1441"
-        height="610"
-        viewBox="0 0 1441 610"
+        height="734"
+        viewBox="0 0 1441 734"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >

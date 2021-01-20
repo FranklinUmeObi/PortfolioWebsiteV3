@@ -3,18 +3,27 @@ import "./MainPage.css";
 import Rotate from "react-reveal/Rotate";
 
 import HomeSection from "./HomeSection";
+import AboutSection from "./AboutSection";
 
 function MainPage() {
   return (
     <div className="mainpage" id="Home">
       <HomeSection/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <AboutSection/>
 
-      <Rotate bottom right>
-        <div className="homepage glass" id="About">
-          <h2>Tewst2</h2>
-          <h3>I am a frog</h3>
-        </div>
-      </Rotate>
+      
 
       <Rotate bottom left>
         <div className="homepage glass" id="About">

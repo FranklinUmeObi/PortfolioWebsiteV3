@@ -11,9 +11,12 @@ import { BiBarChartSquare } from 'react-icons/bi';
 import { BiEnvelope } from 'react-icons/bi';
 import { HashLink as Link } from 'react-router-hash-link';
 
+import Roll from 'react-reveal/Roll';
+
 function Navbar() {
     return (
-        <div className="navbar glass">
+        <Roll left>
+          <div className="navbar glass">
             <div className="navbar-avatarContainer">
                 <div className="navbar-avatarColour">
                     <img src={avatar} alt="Avatar" className="navbar-avatar"/>
@@ -64,6 +67,8 @@ function Navbar() {
             </div>
             
         </div>
+        </Roll>
+        
     )
 }
 

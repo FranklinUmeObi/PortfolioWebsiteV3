@@ -74,7 +74,7 @@ align-items: center;
 .navItem{
     height: 35px;
     width: 190px;
-    margin: 6px;
+    margin: 5px;
     background: none;
     border: none;
     text-align: left;
@@ -83,6 +83,7 @@ align-items: center;
     display: flex;
     align-items: center;
     text-decoration: none;
+    border-radius: 15px;
 }
 
 .navItem-icon{
@@ -111,6 +112,7 @@ align-items: center;
 /* Bounce To Right */
 .hvr-bounce-to-right {
    cursor: pointer;
+   border-radius: 15px;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -127,6 +129,7 @@ align-items: center;
     top: 0;
     left: 0;
     right: 0;
+    border-radius: 15px;
     bottom: 0;
     background: #6fe268;
     -webkit-transform: scaleX(0);

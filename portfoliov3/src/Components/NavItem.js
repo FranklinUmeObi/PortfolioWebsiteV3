@@ -41,13 +41,16 @@ function NavItem(props) {
 
   return (
     <Link to={`/#${props.text}`} style={{ textDecoration: "none" }}>
-      <ButtonToggle
-        className="navItem "
-        active={props.stateActive === props.text}
-        onClick={props.click}>
-        {icon}
-        <h3 className="navItem-text">{props.text}</h3>
-      </ButtonToggle>
+      <div className="navItem-content">
+        <ButtonToggle
+          className="navItem "
+          active={props.stateActive === props.text}
+          onClick={props.click}>
+          {icon}
+          <p className="navItem-text">{props.text}</p>
+        </ButtonToggle>
+      </div>
+      
     </Link>
   );
 }

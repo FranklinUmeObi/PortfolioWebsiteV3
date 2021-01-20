@@ -45,7 +45,7 @@ HomeSection
 
 .hompage-title{
     font-size: 3rem;
-    margin-top: 70px;
+    margin-top: 180px;
 }
 
 .hompage-textContainer{
@@ -66,6 +66,12 @@ HomeSection
     height: 20%;
     margin-top: auto;
     margin-bottom: 60px;
+}
+
+.homepage-iconItem{
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .homepage-icon{

@@ -41,10 +41,22 @@ function HomeSection() {
 
           <Zoom bottom cascade>
           <div className="homepage-iconContainer glass">
-          <a href="https://github.com/FranklinUmeObi" className="hvr-bounce-in"><FiGithub className="homepage-icon" /></a>
-          <a href="https://www.linkedin.com/in/franklinumeobi/" className="hvr-bounce-in"><FiLinkedin className="homepage-icon" /></a>
-          <a href="https://www.facebook.com/franklinumeobi99/" className="hvr-bounce-in"><FiFacebook className="homepage-icon" /></a>
-          <a href="https://www.instagram.com/franklinumeobi/" className="hvr-bounce-in"><FiInstagram className="homepage-icon" /></a>
+          <a href="https://github.com/FranklinUmeObi" className="hvr-bounce-in homepage-iconItem">
+              <FiGithub className="homepage-icon" />
+              <p>Github</p>
+              </a>
+          <a href="https://www.linkedin.com/in/franklinumeobi/" className="hvr-bounce-in homepage-iconItem">
+              <FiLinkedin className="homepage-icon" />
+              <p>LinkedIn</p>
+              </a>
+          <a href="https://www.facebook.com/franklinumeobi99/" className="hvr-bounce-in homepage-iconItem">
+              <FiFacebook className="homepage-icon" />
+              <p>Facebook</p>
+              </a>
+          <a href="https://www.instagram.com/franklinumeobi/" className="hvr-bounce-in homepage-iconItem">
+              <FiInstagram className="homepage-icon" />
+              <p>Instagram</p>
+              </a>
 
           </div>
         </Zoom>

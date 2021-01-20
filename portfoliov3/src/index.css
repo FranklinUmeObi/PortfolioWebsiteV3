@@ -1,8 +1,10 @@
-body {
-  font-family: Varela Round, 'Roboto', 'Fira Sans', 'Helvetica Neue',sans-serif;
+*{
+  font-family: Varela Round, 'Roboto', 'Fira Sans', 'Helvetica Neue',sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
+body {
   margin: 0;
   padding: 0;
 

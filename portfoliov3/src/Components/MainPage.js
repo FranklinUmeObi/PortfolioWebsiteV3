@@ -5,11 +5,11 @@ function MainPage() {
     return (
         <div className="mainpage" id="Home">
             <div className="homepage glass" >
-                <h2>Wagwan sexy</h2>
-                <h3>I am a frog</h3>
+                <h2>Toast</h2>
+                <h3>I am a zebra</h3>
             </div>
             <div className="homepage glass">
-                <h2>Wagwan sexy</h2>
+                <h2>Tewst2</h2>
                 <h3>I am a frog</h3>
             </div>
         </div>

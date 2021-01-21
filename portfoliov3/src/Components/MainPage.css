@@ -206,6 +206,23 @@ margin-top: 5px;
     color: white;
 }
 
+.about-skillsContainer{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 10px;
+}
+.about-skill{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px;
+}
+
 .about-textUl{
     margin-top: 10px;
 }

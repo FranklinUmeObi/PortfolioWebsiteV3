@@ -52,7 +52,17 @@ function AboutSection() {
               <p className="about-subTitle">Skills</p>
             </div>
             <div className="about-text">
-              <p>rapper</p>
+              <div className="about-skillsContainer">
+                    <div className="about-skill glass"><h3>Web Dev</h3></div>
+                    <div className="about-skill glass"><h3>React</h3></div>
+                    <div className="about-skill glass"><h3>Node.js</h3></div>
+                    <div className="about-skill glass"><h3>Java</h3></div>
+                    <div className="about-skill glass"><h3>MySQL</h3></div>
+                    <div className="about-skill glass"><h3>Mongodb</h3></div>
+                    <div className="about-skill glass"><h3>Photoshop</h3></div>
+                    <div className="about-skill glass"><h3>Illustrator</h3></div>
+
+              </div>
             </div>
           </div>
         </div>
@@ -62,7 +72,7 @@ function AboutSection() {
         <div className="about-section aboutM">
           <div className="about-boxwide glass">
             <div className="about-subTitleContainer">
-              <p className="about-subTitle">Accomplishments</p>
+              <p className="about-subTitle">accomplishments</p>
             </div>
             <div className="about-textL">
               <ul className="about-textUl">

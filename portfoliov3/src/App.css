@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  color: black;
+  color: white;
 }
 
 .white{
@@ -13,9 +13,9 @@
   background-image: rgb(255, 255, 255);
   background-image: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.7) 0%,
-    rgba(255, 255, 255, 0.4) 30%,
-    rgba(255, 255, 255, 0.15) 100%
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.3) 20%,
+    rgba(255, 255, 255, 0.05) 100%
   );
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(8px);

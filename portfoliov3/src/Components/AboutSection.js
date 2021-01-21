@@ -6,9 +6,9 @@ import "./MainPage.css";
 
 function AboutSection() {
   return (
-    <div className="about" id="about">
+    <div className="about" >
       <Rotate bottom right>
-        <div className="about-intro glass">
+        <div className="intro glass">
           <h2 className="about-introText">About Me</h2>
         </div>
       </Rotate>
@@ -20,12 +20,12 @@ function AboutSection() {
               <p className="about-subTitle">Introduction</p>
             </div>
             <div className="about-text">
-              <p>
+              <p className="white">
                 I am a Computer Science & Business student at Trinity College
                 Dublin.
               </p>
               <br />
-              <p>
+              <p className="white">
                 Having experience in multiple programming languages, databases,
                 software tools and frameworks, I am always looking for a fun and
                 challenging project to work on.
@@ -85,11 +85,11 @@ function AboutSection() {
             <div className="about-textL">
             <Bounce bottom cascade>
             <ul className="about-textUl">
-                  <li className="about-textLi"><b>2018</b> Physics student of the year at Wilson's Hospital School 
+                  <li className="about-textLi white"><b>2018</b> Physics student of the year at Wilson's Hospital School 
                         (Institute of Physics, Ireland)</li>
-                <li className="about-textLi"><b>2019</b> Nominated Class representative for Computer Science &
+                <li className="about-textLi white"><b>2019</b> Nominated Class representative for Computer Science &
                         Business class of 2022</li>
-                <li className="about-textLi"><b>2020</b> Tangent’s LaunchBox Finalist with my startup idea “ScanE”</li>
+                <li className="about-textLi white"><b>2020</b> Tangent’s LaunchBox Finalist with my startup idea “ScanE”</li>
               </ul>
         </Bounce>
               

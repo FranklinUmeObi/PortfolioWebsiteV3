@@ -102,7 +102,7 @@ HomeSection
 }
 
 .sectionBreak {
-  height: 200px;
+  height: 250px;
 }
 
 .sectionBreakAnchor {
@@ -121,7 +121,7 @@ AboutSection
   align-items: center;
 }
 
-.about-intro {
+.intro {
   width: 350px;
   text-align: center;
   padding: 10px;
@@ -227,6 +227,19 @@ justify-content: space-between;
 }
 
 .about-textLi{
-    margin: 10px;
-    padding: 6px;
+    margin: 5px;
+    padding: 2px;
 }
+
+/* 
+---------------------------------------------
+PortfolioSection
+---------------------------------------------
+ */
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+

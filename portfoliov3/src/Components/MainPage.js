@@ -8,27 +8,20 @@ import AboutSection from "./AboutSection";
 function MainPage() {
   return (
     <div className="mainpage" id="Home">
-      <HomeSection/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <AboutSection/>
+      <HomeSection />
 
-      
+      <div className="sectionBreak" />
+      <div className="sectionBreakAnchor" id="About" />
+
+      <AboutSection />
+
+      <div className="sectionBreak" />
+      <div className="sectionBreakAnchor" id="Portfolio" />
 
       <Rotate bottom left>
-        <div className="homepage glass" id="About">
-          <h2>Spider</h2>
-          <h3>Bread</h3>
+        <div className="homepage glass">
+          <h2>Portfolio</h2>
+          <h3>PlaceHolder</h3>
         </div>
       </Rotate>
     </div>

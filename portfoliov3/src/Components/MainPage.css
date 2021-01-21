@@ -1,32 +1,35 @@
+.mainpage {
+  width: 60vw;
+  margin-left: 35vw;
+}
 
-.mainpage{
-    width: 60vw;
-    margin-left: 35vw;
+p{
+    font-weight: 500;
 }
 
 @media only screen and (max-width: 1000px) {
-    .mainpage {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        vertical-align: middle;
-        width: 50vw;
-        margin-left: 45vw;
-        align-items: center;
-    }
+  .mainpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    width: 50vw;
+    margin-left: 45vw;
+    align-items: center;
   }
+}
 
 @media only screen and (max-width: 750px) {
-    .mainpage {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        vertical-align: middle;
-        width: 90vw;
-        margin: auto;
-        align-items: center;
-    }
+  .mainpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    width: 90vw;
+    margin: auto;
+    align-items: center;
   }
+}
 
 /* 
 ---------------------------------------------
@@ -34,72 +37,77 @@ HomeSection
 ---------------------------------------------
  */
 
-.homepage{
-    height: 90vh;
-    margin-top: 5vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.homepage {
+  height: 90vh;
+  margin-top: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.hompage-title{
-    font-size: 3rem;
-    margin-top: 180px;
+.hompage-title {
+  font-size: 3rem;
+  margin-top: 180px;
 }
 
-.hompage-textContainer{
-    text-align: center;
-    align-items: center;
+.hompage-textContainer {
+  text-align: center;
+  align-items: center;
 }
 
-.react-typewriter-text{
-    text-align: center !important;
+.react-typewriter-text {
+  text-align: center !important;
 }
 
-.homepage-iconContainer{
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 90%;
-    height: 20%;
-    margin-top: auto;
-    margin-bottom: 60px;
+.homepage-iconContainer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 20%;
+  margin-top: auto;
+  margin-bottom: 60px;
 }
 
-.homepage-iconItem{
-    text-align: center;
-    align-items: center;
-    text-decoration: none;
+.homepage-iconItem {
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
 }
 
-.homepage-icon{
-    width: 35px;
-    height: 35px;
+.homepage-icon {
+  width: 35px;
+  height: 35px;
 }
-
 
 /* Bounce In */
 .hvr-bounce-in {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-  }
-  .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  }
-  
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover,
+.hvr-bounce-in:focus,
+.hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
 
+.sectionBreak {
+  height: 200px;
+}
 
-
+.sectionBreakAnchor {
+  height: 10px;
+}
 
 /* 
 ---------------------------------------------
@@ -107,18 +115,102 @@ AboutSection
 ---------------------------------------------
  */
 
-.about{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
- .about-intro{
-     width: 250px;
-     text-align: center;
-     padding: 10px;
- }
+.about-intro {
+  width: 350px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 40px;
+}
 
- .about-introText{
-    font-size: 40px;
+.about-introText {
+  font-size: 40px;
+}
+
+.about-section {
+  /* height: 300px; */
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-subTitleContainer {
+  text-align: center;
+  margin: 7px;
+}
+
+.about-subTitle {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.aboutL {
+  justify-content: start;
+}
+.aboutM {
+  justify-content: center;
+}
+.aboutR {
+  justify-content: flex-end;
+}
+.about2 {
+  justify-content: space-around;
+}
+.about-boxwide{
+width: 450px;
+height: 250px;
+margin-top: 5px;
+}
+
+.about-box {
+  width: 350px;
+  height: 250px;
+  margin-top: 5px;
+}
+
+.about-text {
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  vertical-align: middle;
+  
+}
+.about-textL {
+  padding: 5px;
+  margin: 5px;
+  text-align: left;
+  vertical-align: middle;
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.about-trinity {
+  font-size: 20px;
+  margin: 5px;
+  color: white;
+}
+
+.about-course {
+  margin: 3px;
+  font-size: 22px;
+}
+
+.about-year{
+    color: white;
+}
+
+.about-textUl{
+    margin-top: 10px;
+}
+
+.about-textLi{
+    margin: 10px;
+    padding: 6px;
 }

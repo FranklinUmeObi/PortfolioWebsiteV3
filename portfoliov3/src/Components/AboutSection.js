@@ -1,5 +1,7 @@
 import React from "react";
 import Rotate from "react-reveal/Rotate";
+import Roll from 'react-reveal/Roll';
+import Bounce from 'react-reveal/Bounce';
 import "./MainPage.css";
 
 function AboutSection() {
@@ -40,11 +42,14 @@ function AboutSection() {
               <p className="about-subTitle">Education</p>
             </div>
             <div className="about-textL">
-              <div>
-                <h2 className="about-course">Computer Science & Business</h2>
-                <p className="about-trinity">Trinity college Dublin</p>
-                <p className="about-year">August 2018 - August 2022</p>
-              </div>
+            <Roll left>
+                <div>
+                    <h2 className="about-course">Computer Science & Business</h2>
+                    <p className="about-trinity">Trinity college Dublin</p>
+                    <p className="about-year">August 2018 - August 2022</p>
+                </div>
+            </Roll>
+              
             </div>
           </div>
           <div className="about-box glass">
@@ -52,7 +57,8 @@ function AboutSection() {
               <p className="about-subTitle">Skills</p>
             </div>
             <div className="about-text">
-              <div className="about-skillsContainer">
+              <Roll right cascade>
+                <div className="about-skillsContainer">
                     <div className="about-skill glass"><h3>Web Dev</h3></div>
                     <div className="about-skill glass"><h3>React</h3></div>
                     <div className="about-skill glass"><h3>Node.js</h3></div>
@@ -61,8 +67,10 @@ function AboutSection() {
                     <div className="about-skill glass"><h3>Mongodb</h3></div>
                     <div className="about-skill glass"><h3>Photoshop</h3></div>
                     <div className="about-skill glass"><h3>Illustrator</h3></div>
-
-              </div>
+                </div>
+              </Roll>
+                    
+ 
             </div>
           </div>
         </div>
@@ -75,13 +83,16 @@ function AboutSection() {
               <p className="about-subTitle">accomplishments</p>
             </div>
             <div className="about-textL">
-              <ul className="about-textUl">
+            <Bounce bottom cascade>
+            <ul className="about-textUl">
                   <li className="about-textLi"><b>2018</b> Physics student of the year at Wilson's Hospital School 
                         (Institute of Physics, Ireland)</li>
                 <li className="about-textLi"><b>2019</b> Nominated Class representative for Computer Science &
                         Business class of 2022</li>
                 <li className="about-textLi"><b>2020</b> Tangent’s LaunchBox Finalist with my startup idea “ScanE”</li>
               </ul>
+        </Bounce>
+              
             </div>
           </div>
         </div>

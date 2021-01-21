@@ -80,7 +80,7 @@ function AboutSection() {
         <div className="about-section aboutM">
           <div className="about-boxwide glass">
             <div className="about-subTitleContainer">
-              <p className="about-subTitle">accomplishments</p>
+              <p className="about-subTitle">Accomplishments</p>
             </div>
             <div className="about-textL">
             <Bounce bottom cascade>

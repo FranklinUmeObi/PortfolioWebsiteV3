@@ -22,7 +22,7 @@ function HomeSection() {
                 fontWeight: 500,
                 fontSize: "2em",
               }}
-              startDelay={2000}
+              startDelay={1400}
               cursorColor="#3F3D56"
               multiText={[
                 "Fullstack Developer",

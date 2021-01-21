@@ -12,19 +12,19 @@
 
 #Item1 {
   fill-opacity: 1;
-  -webkit-animation: slide-bl 12s linear infinite alternate both;
-  animation: slide-bl 12s linear infinite alternate both;
+  -webkit-animation: slide-bl 22s linear infinite alternate both;
+  animation: slide-bl 22s linear infinite alternate both;
 }
 #Item2 {
-  -webkit-animation: slide-tl 16s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+  -webkit-animation: slide-tl 26s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
     alternate both;
-  animation: slide-tl 16s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+  animation: slide-tl 26s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
     alternate both;
 }
 #Item3 {
-  -webkit-animation: slide-right 14s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  -webkit-animation: slide-right 24s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     infinite alternate both;
-  animation: slide-right 14s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+  animation: slide-right 24s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
     alternate both;
 }
 
@@ -33,22 +33,22 @@
   animation: slide-bl 15s linear infinite alternate both;
 }
 #Item4 {
-  -webkit-animation: slide-tl 9s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+  -webkit-animation: slide-tl 19s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
     alternate both;
-  animation: slide-tl 9s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate
+  animation: slide-tl 19s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate
     both;
 }
 #Item6 {
-  -webkit-animation: slide-right 10s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  -webkit-animation: slide-right 20s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     infinite alternate both;
-  animation: slide-right 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+  animation: slide-right 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
     alternate both;
 }
 
 #Item7 {
-  -webkit-animation: slide-right 13s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  -webkit-animation: slide-right 23s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     infinite alternate both;
-  animation: slide-right 13s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+  animation: slide-right 23s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
     alternate both;
 }
 

@@ -102,7 +102,7 @@ HomeSection
 }
 
 .sectionBreak {
-  height: 200px;
+  height: 250px;
 }
 
 .sectionBreakAnchor {
@@ -120,8 +120,14 @@ AboutSection
   flex-direction: column;
   align-items: center;
 }
+.aboutContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 
-.about-intro {
+.intro {
   width: 350px;
   text-align: center;
   padding: 10px;
@@ -138,6 +144,8 @@ AboutSection
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
 }
 
 .about-subTitleContainer {
@@ -163,15 +171,17 @@ AboutSection
   justify-content: space-around;
 }
 .about-boxwide{
-width: 375px;
+width: 360px;
 height: 250px;
 margin-top: 5px;
+margin: 9px;
 }
 
 .about-box {
-  width: 325px;
+  width: 300px;
   height: 250px;
   margin-top: 5px;
+  margin: 9px;
 }
 
 .about-text {
@@ -216,17 +226,30 @@ justify-content: space-between;
     text-align: center;
     justify-content: center;
     vertical-align: middle;
-    width: 140px;
+    width: 120px;
     height: 30px;
     line-height: 30px;
     margin: 5px;
 }
 
 .about-textUl{
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .about-textLi{
     margin: 10px;
-    padding: 6px;
+    padding: 2px;
 }
+
+/* 
+---------------------------------------------
+PortfolioSection
+---------------------------------------------
+ */
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+

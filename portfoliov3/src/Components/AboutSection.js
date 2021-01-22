@@ -22,15 +22,14 @@ function AboutSection() {
             <div className="about-text">
             
               <p className="white">
-                I am a Computer Science & Business student at Trinity College
-                Dublin.
+                I am a young Software Engineer with a passion 
+                for learning and eager to create and innovate
               </p>
               
               <br />
               <p className="white">
-                Having experience in multiple programming languages, databases,
-                software tools and frameworks, I am always looking for a fun and
-                challenging project to work on.
+                My interests inlude developing, designing, 
+                entrpreneurship, science and sports
               </p>
             </div>
             </Bounce>

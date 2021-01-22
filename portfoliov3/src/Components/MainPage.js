@@ -1,6 +1,5 @@
 import React from "react";
 import "./MainPage.css";
-import Rotate from "react-reveal/Rotate";
 
 import HomeSection from "./HomeSection";
 import AboutSection from "./AboutSection";

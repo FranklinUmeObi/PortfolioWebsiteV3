@@ -39,7 +39,7 @@ function HomeSection() {
           </div>
 
 
-          <Zoom bottom cascade>
+          <Zoom top cascade>
           <div className="homepage-iconContainer glass">
           <a href="https://github.com/FranklinUmeObi" className="hvr-bounce-in homepage-iconItem">
               <FiGithub className="homepage-icon" />

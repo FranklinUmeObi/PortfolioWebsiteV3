@@ -1,16 +1,15 @@
 import React from "react";
 import Rotate from "react-reveal/Rotate";
-
-function PortfolioSection() {
+function StatsSection() {
   return (
     <div className="section">
       <Rotate bottom right>
         <div className="intro glass">
-          <h2 className="about-introText">Portfolio</h2>
+          <h2 className="about-introText">Stats</h2>
         </div>
       </Rotate>
     </div>
   );
 }
 
-export default PortfolioSection;
+export default StatsSection;

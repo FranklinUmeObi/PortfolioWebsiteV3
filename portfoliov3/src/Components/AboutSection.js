@@ -6,7 +6,7 @@ import "./MainPage.css";
 
 function AboutSection() {
   return (
-    <div className="about">
+    <div className="section">
       <Rotate bottom right>
         <div className="intro glass">
           <h2 className="about-introText">About Me</h2>
@@ -18,11 +18,14 @@ function AboutSection() {
             <div className="about-subTitleContainer">
               <p className="about-subTitle">Introduction</p>
             </div>
+            <Bounce bottom cascade>
             <div className="about-text">
+            
               <p className="white">
                 I am a Computer Science & Business student at Trinity College
                 Dublin.
               </p>
+              
               <br />
               <p className="white">
                 Having experience in multiple programming languages, databases,
@@ -30,6 +33,7 @@ function AboutSection() {
                 challenging project to work on.
               </p>
             </div>
+            </Bounce>
           </div>
         </Rotate>
 

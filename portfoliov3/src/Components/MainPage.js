@@ -5,6 +5,8 @@ import Rotate from "react-reveal/Rotate";
 import HomeSection from "./HomeSection";
 import AboutSection from "./AboutSection";
 import PortfolioSection from "./PortfolioSection";
+import StatsSection from "./StatsSection";
+import ContactSection from "./ContactSection";
 
 function MainPage() {
   return (
@@ -24,12 +26,16 @@ function MainPage() {
       <div className="sectionBreak" />
       <div className="sectionBreakAnchor" id="Stats" />
 
-      <Rotate bottom left>
-        <div className="homepage glass">
-          <h2>Stats</h2>
-          <h3>PlaceHolder</h3>
-        </div>
-      </Rotate>
+      <StatsSection />
+
+      <div className="sectionBreak" />
+      <div className="sectionBreakAnchor" id="Stats" />
+
+      <ContactSection />
+
+      <div className="sectionBreak" />
+      <div className="sectionBreakAnchor" id="Stats" />
+
     </div>
   );
 }

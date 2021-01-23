@@ -1,29 +1,25 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 
 function ProjectCard(props) {
-
-    const tags = props.tags.map((data, index) => (
-        <li className=" project-cardTag glass">{data}</li>
-      ));
+  const tags = props.tags.map((data) => (
+    <li className=" project-cardTag glass">{data}</li>
+  ));
 
   return (
-    <Link to={`../Assets/Projects/${props.link}/index.html`}>
-      <div className=" project-card">
-        <img src={props.image} alt="Project" className=" project-cardImage" />
-        <h2 className=" project-cardTitle">{props.title}</h2>
-        <td onClick={()=> window.open(`../Assets/Projects/${props.link}/index.html`, "_blank")}>text</td>
 
-        <ul className="project-cardTags">
-          {tags}
-        </ul>
+   
+    <a href={`https://franklinumeobi.github.io/Projects/${props.link}/index.html`} target="_blank"rel="noreferrer">
+      <div className=" project-card">
+        <img className="project-cardImage" src={ require(`../Assets/Pimages/${props.image}`) } alt={props.title} />
+        <h2 className="project-cardTitle">{props.title}</h2>
+        <ul className="project-cardTags">{tags}</ul>
         <div className="projectDecContainer">
           <p className=" project-cardDesc">
             Description Description Description Description Description
           </p>
         </div>
       </div>
-    </Link>
+    </a>
   );
 }
 

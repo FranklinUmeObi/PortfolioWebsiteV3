@@ -3,8 +3,8 @@
         [
             {
             "title": "Github Data Visualiser",
-            "img": "Github data Visualised",
             "desc": "A website graphing Github API data about a user through the use of d3.js. The visualisations i have created are a social graph linking repos and contributers, pie chart to show the spread of commits and a treemap analyzing the languages usedin the users repos ",
+            "image": "GithubMetricsVisualised.png",
             "link": "GithubMetricsVisualised",
             "tags": [
                 
@@ -13,24 +13,79 @@
             ]
         },
         {
-            "title": "Github Data Visualiser",
-            "img": "Github data Visualised",
-            "desc": "A website graphing Github API data about a user through the use of d3.js. The visualisations i have created are a social graph linking repos and contributers, pie chart to show the spread of commits and a treemap analyzing the languages usedin the users repos ",
-            "link": "GithubMetricsVisualised",
+            "title": "CSB Module Lookup",
+            "desc": "This is a website built using the MERN stack (Mongodb,Express,React,Node). I built this for me and my coursemates to find out who we share modules with. The project features heavy use of useStates to filter all the data. To host this on my site i used a static implementation but the MERN code is linked",
+            "image": "CSBModuleLookup.png",
+            "link": "build/CSBModuleLookup",
             "tags": [
                 
-                "Javascript", "API", "UI", "Analytics"
+                "React", "MongoDB", "UI", "Backend"
                 
             ]
         },
         {
-            "title": "Github Data Visualiser",
-            "img": "Github data Visualised",
-            "desc": "A website graphing Github API data about a user through the use of d3.js. The visualisations i have created are a social graph linking repos and contributers, pie chart to show the spread of commits and a treemap analyzing the languages usedin the users repos ",
-            "link": "GithubMetricsVisualised",
+            "title": "Laughing Socks",
+            "desc": "An E-Commerce site I built using React. It possess all the main feaatures you would expect a webstore to have (excluding payment)",
+            "image": "LaughingSocks.png",
+            "link": "build/LaughingSocks",
             "tags": [
                 
-                "Javascript", "API", "UI", "Analytics"
+                "React", "Ecommerce", "UI", "Backend"
+                
+            ]
+        },
+        {
+            "title": "Startup: EVE",
+            "desc": "This is my first project as a freelancer. My client was the Irish startup 'EVE'. They asked me to design them a website for their upcoming app. 'EVE creates a cohesive landscape of charging options for Electric Vehicles, by aggregating public and private resources.'",
+            "image": "EVE.png",
+            "link": "EVE",
+            "tags": [
+                
+                "Frontend", "HTML", "CSS"
+                
+            ]
+        },
+        {
+            "title": "Audio Visualiser",
+            "desc": "This is an Audio Visualiser I made using audio analysis tools made available by the p5 sound library. The song being used is: Top Songs of 2019 - A Cappella Medley/Mashup by Rosendale on YouTube",
+            "image": "AudioVisualizer.png",
+            "link": "AudioVisualizer",
+            "tags": [
+                
+                "Javascript", "P5.js", "Analytics"
+                
+            ]
+        },
+        {
+            "title": "Vertigo App",
+            "desc": "Vertigo was an app my team of 6 and I developed for TCD Adapt Medicine. It's an app that implements face tracking to help the rehabilitation of patients who suffer from inner ear damage or vertigo.",
+            "image": "Vertigo.png",
+            "link": "",
+            "tags": [
+                
+                "Mobile", "UI", "Agile"
+                
+            ]
+        },
+        {
+            "title": "Chess",
+            "desc": "This is a chess game made completely from scratch using p5.js. I didn't watch any tutorials as I wanted to figure this out by myself. 1000 lines of code later and a still broken king, it is basically finished. The game is basically completed except for the castling and the en passant rules. Due to the kings not being bug free the game doesnt alert a winner but if you know the rules of chess you can play against a friend like it was any other medium to play chess!",
+            "image": "Chess.png",
+            "link": "Chess",
+            "tags": [
+                
+                "Javascript", "P5.js", "Back-end"
+                
+            ]
+        },
+        {
+            "title": "3D Audio Visualiser",
+            "desc": "by the p5 sound library. This time I dabbled in WEBGL which is used for 3D environments. The audiovisualisation is torus' plotted on a Fibonacci Sphere The song being used is: Sickick - Epic 50 Cent Mashup (Live)",
+            "image": "3DAudioVisualizer.png",
+            "link": "3DAudioVisualizer",
+            "tags": [
+                
+                "Javascript", "P5.js", "OpenGL", "Analytics"
                 
             ]
         }

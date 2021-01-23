@@ -3,17 +3,15 @@ import Rotate from "react-reveal/Rotate";
 import ProjectCard from "./ProjectCard";
 import p from "../Assets/projects.json"
 
-import img from "../Assets/Pimages/1.PNG";
-
 function PortfolioSection() {
 
 
   const cards = p.data.map((data) => (
     <ProjectCard
       title={data.title}
-      image={img}
       desc={data.description}
       link={data.link}
+      image={data.image}
       tags={data.tags}
     />
   ));

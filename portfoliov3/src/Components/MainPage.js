@@ -1,9 +1,6 @@
 import React from "react";
 import "./MainPage.css";
 
-import Navbar from "./Navbar.js";
-import Background from "./Background.js";
-
 import HomeSection from "./HomeSection";
 import AboutSection from "./AboutSection";
 import PortfolioSection from "./PortfolioSection";
@@ -12,9 +9,6 @@ import ContactSection from "./ContactSection";
 
 function MainPage() {
   return (
-    <div>
-      <Background />
-      <Navbar />
       <div className="mainpage" id="Home">
         <HomeSection />
 
@@ -41,7 +35,6 @@ function MainPage() {
         <div className="sectionBreak" />
         <div className="sectionBreakAnchor" id="Stats" />
       </div>
-    </div>
   );
 }
 

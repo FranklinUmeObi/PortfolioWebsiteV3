@@ -1,8 +1,8 @@
 import React from "react";
 
 function ProjectCard(props) {
-  const tags = props.tags.map((data) => (
-    <li className=" project-cardTag glass">{data}</li>
+  const tags = props.tags.map((data, index) => (
+    <li key={index} className=" project-cardTag glass">{data}</li>
   ));
 
   return (

@@ -1,13 +1,12 @@
 import React from "react";
 import Rotate from "react-reveal/Rotate";
 import ProjectCard from "./ProjectCard";
-import p from "../Assets/projects.json"
+import p from "../Assets/projects.json";
 
 function PortfolioSection() {
-
-
-  const cards = p.data.map((data) => (
+  const cards = p.data.map((data, index) => (
     <ProjectCard
+      key={index}
       title={data.title}
       desc={data.description}
       link={data.link}
@@ -16,10 +15,6 @@ function PortfolioSection() {
     />
   ));
 
-
-
-
-
   return (
     <div className="section">
       <Rotate bottom right>
@@ -27,10 +22,9 @@ function PortfolioSection() {
           <h2 className="about-introText">Portfolio</h2>
         </div>
       </Rotate>
-
-      <div className="cardContainer glass">
-        {cards}
-      </div>
+      <Rotate bottom left>
+        <div className="cardContainer glass">{cards}</div>
+      </Rotate>
     </div>
   );
 }

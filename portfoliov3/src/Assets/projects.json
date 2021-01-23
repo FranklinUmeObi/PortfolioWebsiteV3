@@ -80,7 +80,7 @@
         },
         {
             "title": "3D Audio Visualiser",
-            "desc": "An Audio Visualiser in WEBGL which is used for 3D environments. The audiovisualisation is torus' plotted on a Fibonacci Sphere The song being used is: Sickick - Epic 50 Cent Mashup (Live)",
+            "desc": "An Audio Visualiser in WEBGL which is used for 3D environments.The song being used is: Sickick - Epic 50 Cent Mashup (Live) ------------->(click screen while it loads the 3d as autoplay won't work otherwise)",
             "image": "3DAudioVisualizer.png",
             "link": "3DAudioVisualizer",
             "tags": [

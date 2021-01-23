@@ -48,6 +48,10 @@ function ProjectCard(props) {
             <img className="project-cardImage" src={image} alt={props.title} />
             <h2 className="project-cardTitle">{props.title}</h2>
             <ul className="project-cardTags">{tags}</ul>
+            <div className="project-cardfine">
+              <p>Hover for more details</p>
+              <p>Click for live demo</p>
+            </div>
           </div>
 
           <div className="project-cardback">

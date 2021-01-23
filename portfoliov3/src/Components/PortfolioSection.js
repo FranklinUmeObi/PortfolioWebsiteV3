@@ -19,11 +19,13 @@ function PortfolioSection() {
     <div className="section">
       <Rotate bottom right>
         <div className="intro glass">
-          <h2 className="about-introText">Portfolio</h2>
+          <h2 className="about-introText">My Portfolio</h2>
         </div>
       </Rotate>
       <Rotate bottom left>
-        <div className="cardContainer glass">{cards}</div>
+        <div className="cardContainer glass">
+          {cards}
+          </div>
       </Rotate>
     </div>
   );

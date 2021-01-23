@@ -58,28 +58,28 @@ function AboutSection() {
             <div className="about-text">
               <Roll right cascade>
                 <div className="about-skillsContainer">
-                  <div className="about-skill glass">
+                  <div className="about-skill glass2">
                     <h3>Web Dev</h3>
                   </div>
-                  <div className="about-skill glass">
+                  <div className="about-skill glass2">
                     <h3>React</h3>
                   </div>
-                  <div className="about-skill glass">
+                  <div className="about-skill glass2">
                     <h3>Node.js</h3>
                   </div>
-                  <div className="about-skill glass">
+                  <div className="about-skill glass2">
                     <h3>Java</h3>
                   </div>
-                  <div className="about-skill glass">
+                  <div className="about-skill glass2">
                     <h3>MySQL</h3>
                   </div>
-                  <div className="about-skill glass">
+                  <div className="about-skill glass2">
                     <h3>MongoDB</h3>
                   </div>
-                  <div className="about-skill glass">
+                  <div className="about-skill glass2">
                     <h3>Photoshop</h3>
                   </div>
-                  <div className="about-skill glass">
+                  <div className="about-skill glass2">
                     <h3>Illustrator</h3>
                   </div>
                 </div>

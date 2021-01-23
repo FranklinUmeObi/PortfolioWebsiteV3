@@ -8,7 +8,7 @@ function PortfolioSection() {
     <ProjectCard
       key={index}
       title={data.title}
-      desc={data.description}
+      desc={data.desc}
       link={data.link}
       image={data.image}
       tags={data.tags}

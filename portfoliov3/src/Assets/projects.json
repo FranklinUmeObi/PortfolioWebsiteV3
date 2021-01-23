@@ -14,12 +14,12 @@
         },
         {
             "title": "CSB Module Lookup",
-            "desc": "This is a website built using the MERN stack (Mongodb,Express,React,Node). I built this for me and my coursemates to find out who we share modules with. The project features heavy use of useStates to filter all the data. To host this on my site i used a static implementation but the MERN code is linked",
+            "desc": "This is a website built using the MERN stack (Mongodb, Express, React, Node). I built this for me and my coursemates to find out who we share modules with.",
             "image": "CSBModuleLookup.png",
-            "link": "build/CSBModuleLookup",
+            "link": "CSBModuleLookup/build",
             "tags": [
                 
-                "React", "MongoDB", "UI", "Backend"
+                "React", "MongoDB", "UI", "Express"
                 
             ]
         },
@@ -27,7 +27,7 @@
             "title": "Laughing Socks",
             "desc": "An E-Commerce site I built using React. It possess all the main feaatures you would expect a webstore to have (excluding payment)",
             "image": "LaughingSocks.png",
-            "link": "build/LaughingSocks",
+            "link": "LaughingSocks/build",
             "tags": [
                 
                 "React", "Ecommerce", "UI", "Backend"
@@ -69,7 +69,7 @@
         },
         {
             "title": "Chess",
-            "desc": "This is a chess game made completely from scratch using p5.js. I didn't watch any tutorials as I wanted to figure this out by myself. 1000 lines of code later and a still broken king, it is basically finished. The game is basically completed except for the castling and the en passant rules. Due to the kings not being bug free the game doesnt alert a winner but if you know the rules of chess you can play against a friend like it was any other medium to play chess!",
+            "desc": "This is a chess game made completely from scratch using p5.js. The game is basically completed except for the castling and the en passant rules and check/checkmate",
             "image": "Chess.png",
             "link": "Chess",
             "tags": [

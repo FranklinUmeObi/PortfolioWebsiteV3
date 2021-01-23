@@ -3,12 +3,12 @@
         [
             {
             "title": "Github Data Visualiser",
-            "desc": "A website graphing Github API data about a user through the use of d3.js. The visualisations i have created are a social graph linking repos and contributers, pie chart to show the spread of commits and a treemap analyzing the languages usedin the users repos ",
+            "desc": "A website graphing Github API data about a user through the use of d3.js. The data analyses repos, contributers, the spread of commits and languages",
             "image": "GithubMetricsVisualised.png",
             "link": "GithubMetricsVisualised",
             "tags": [
                 
-                "Javascript", "API", "UI", "Analytics"
+                "D3.js", "API", "Parsing", "Analytics"
                 
             ]
         },
@@ -36,7 +36,7 @@
         },
         {
             "title": "Startup: EVE",
-            "desc": "This is my first project as a freelancer. My client was the Irish startup 'EVE'. They asked me to design them a website for their upcoming app. 'EVE creates a cohesive landscape of charging options for Electric Vehicles, by aggregating public and private resources.'",
+            "desc": "This is my first project as a freelancer. My client was the Irish startup 'EVE'. They asked me to design them a website for their upcoming app.",
             "image": "EVE.png",
             "link": "EVE",
             "tags": [
@@ -80,12 +80,12 @@
         },
         {
             "title": "3D Audio Visualiser",
-            "desc": "by the p5 sound library. This time I dabbled in WEBGL which is used for 3D environments. The audiovisualisation is torus' plotted on a Fibonacci Sphere The song being used is: Sickick - Epic 50 Cent Mashup (Live)",
+            "desc": "An Audio Visualiser in WEBGL which is used for 3D environments. The audiovisualisation is torus' plotted on a Fibonacci Sphere The song being used is: Sickick - Epic 50 Cent Mashup (Live)",
             "image": "3DAudioVisualizer.png",
             "link": "3DAudioVisualizer",
             "tags": [
                 
-                "Javascript", "P5.js", "OpenGL", "Analytics"
+                "Javascript", "P5.js", "WEBGL", "Analytics"
                 
             ]
         }

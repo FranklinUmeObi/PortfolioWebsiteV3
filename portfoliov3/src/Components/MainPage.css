@@ -116,9 +116,9 @@ AboutSection
  */
 
 .section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .aboutContainer{
     display: flex;
@@ -246,4 +246,52 @@ justify-content: space-between;
 PortfolioSection
 ---------------------------------------------
  */
+ .cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+ }
+ a{
+    text-decoration: none;
+ }
 
+ .project-card{
+     width: 260px;
+     height: 350px;
+     border-radius: 25px;
+     /* background-color: brown; */
+     margin: 40px;
+ }
+ .project-card:hover{
+     box-shadow: 2px 2px 10px black;
+ }
+
+ .project-cardImage{
+     width: 260px;
+     height: 180px;
+     border-radius: 25px 25px 0px 0px;
+ }
+
+
+.project-cardTitle{
+    font-size: 22px;
+    margin: 5px;
+}
+
+.project-cardTags{
+    display: flex;
+}
+
+.project-cardTag{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: 90px;
+    height: 25px;
+    line-height: 25px;
+    margin: 2px;
+    font-size: 14px;
+}
+ 

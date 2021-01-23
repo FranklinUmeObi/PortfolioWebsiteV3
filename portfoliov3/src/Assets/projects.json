@@ -1,0 +1,38 @@
+{
+    "data":
+        [
+            {
+            "title": "Github Data Visualiser",
+            "img": "Github data Visualised",
+            "desc": "A website graphing Github API data about a user through the use of d3.js. The visualisations i have created are a social graph linking repos and contributers, pie chart to show the spread of commits and a treemap analyzing the languages usedin the users repos ",
+            "link": "GithubMetricsVisualised",
+            "tags": [
+                
+                "Javascript", "API", "UI", "Analytics"
+                
+            ]
+        },
+        {
+            "title": "Github Data Visualiser",
+            "img": "Github data Visualised",
+            "desc": "A website graphing Github API data about a user through the use of d3.js. The visualisations i have created are a social graph linking repos and contributers, pie chart to show the spread of commits and a treemap analyzing the languages usedin the users repos ",
+            "link": "GithubMetricsVisualised",
+            "tags": [
+                
+                "Javascript", "API", "UI", "Analytics"
+                
+            ]
+        },
+        {
+            "title": "Github Data Visualiser",
+            "img": "Github data Visualised",
+            "desc": "A website graphing Github API data about a user through the use of d3.js. The visualisations i have created are a social graph linking repos and contributers, pie chart to show the spread of commits and a treemap analyzing the languages usedin the users repos ",
+            "link": "GithubMetricsVisualised",
+            "tags": [
+                
+                "Javascript", "API", "UI", "Analytics"
+                
+            ]
+        }
+        ]
+}

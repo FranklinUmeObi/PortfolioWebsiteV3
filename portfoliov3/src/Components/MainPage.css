@@ -272,7 +272,7 @@ a {
   transition: transform 0.4s ease 0s;
   -webkit-animation: giro 2s 1;
   animation: giro 2s 1;
-  
+
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.67);
   backdrop-filter: blur(-2px);
   -webkit-backdrop-filter: blur(-2px);
@@ -288,10 +288,6 @@ a {
   border-radius: 25px;
   position: absolute;
   text-align: center;
-}
-
-.project-cardfront {
-  
 }
 
 .project-cardback {
@@ -326,7 +322,6 @@ a {
   display: flex;
 }
 
-
 .project-cardTag {
   display: flex;
   text-align: center;
@@ -347,7 +342,7 @@ a {
   padding: 12px;
 }
 
-.project-cardfine{
+.project-cardfine {
   margin-top: 10px;
   font-size: small;
 }
@@ -368,4 +363,30 @@ a {
   to {
     transform: rotateY(0deg);
   }
+}
+
+.chartContainer1 {
+  height: 500px;
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  margin: 40px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chartTitle {
+  margin: 35px;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+canvas {
+  height: 100% !important;
+}
+
+.chartjs-render-monitor {
+  height: 100% !important;
+  width: 100% !important;
+  color: white !important;
 }

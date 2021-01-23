@@ -6,6 +6,8 @@ import './Navbar.css';
 import avatar from '../Assets/Images/face.png';
 import NavItem from "./NavItem.js"
 
+
+
 const nav = ['Home', 'About', 'Portfolio', 'Stats', 'Contact'];
 
 function Navbar() {

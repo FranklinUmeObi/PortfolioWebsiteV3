@@ -28,12 +28,12 @@ function MainPage() {
         <StatsSection />
 
         <div className="sectionBreak" />
-        <div className="sectionBreakAnchor" id="Stats" />
+        <div className="sectionBreakAnchor" id="Contact" />
 
         <ContactSection />
 
         <div className="sectionBreak" />
-        <div className="sectionBreakAnchor" id="Stats" />
+        <div className="sectionBreakAnchor" id="" />
       </div>
   );
 }

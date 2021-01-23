@@ -65,22 +65,32 @@ HomeSection
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
+  width: 50%;
   height: 20%;
   margin-top: auto;
   margin-bottom: 60px;
+  padding: 30px;
 }
 
 .homepage-iconItem {
   text-align: center;
   align-items: center;
   text-decoration: none;
+
 }
 
 .homepage-icon {
   width: 35px;
   height: 35px;
+  margin: 10px;
 }
+.homepage-icon2 {
+  width: 55px;
+  height: 55px;
+  padding: 20px;
+  margin-top: 70px;
+}
+
 
 /* Bounce In */
 .hvr-bounce-in {
@@ -389,4 +399,11 @@ canvas {
   height: 100% !important;
   width: 100% !important;
   color: white !important;
+}
+
+
+
+.contactContainer{
+  text-align: center;
+  padding: 30px;
 }

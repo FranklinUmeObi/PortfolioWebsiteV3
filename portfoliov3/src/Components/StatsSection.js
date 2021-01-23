@@ -1,39 +1,35 @@
 import React from "react";
-import Rotate from "react-reveal/Rotate";
+import Slide from "react-reveal/Slide";
 
-import Commits from './GraphComponents/ChartCommits.js'
-import Languages from './GraphComponents/ChartLanguages.js'
-import Time from './GraphComponents/ChartTime.js'
+import Commits from "./GraphComponents/ChartCommits.js";
+import Languages from "./GraphComponents/ChartLanguages.js";
+import Time from "./GraphComponents/ChartTime.js";
 
 function StatsSection() {
   return (
-    <div className="section">
-      <Rotate bottom right>
+    <Slide right cascade>
+      <div className="section">
+
         <div className="intro glass">
           <h2 className="about-introText">Stats</h2>
         </div>
 
         <div className="chartContainer1 glass">
           <h2 className="chartTitle">Number of commits in my repositories</h2>
-          <Commits/>
+          <Commits />
         </div>
 
         <div className="chartContainer1 glass">
           <h2 className="chartTitle">Languages in my repositories</h2>
-          <Languages/>
+          <Languages />
         </div>
 
         <div className="chartContainer1 glass">
           <h2 className="chartTitle">My Commits over time</h2>
-          <Time/>
+          <Time />
         </div>
-
-<h2>Pie chart to track commits per repo</h2>
-<h2>Stacked bar chart for languages per repo (Normalize probably)</h2>
-<h2>Line chart tracking Commits over last 3 months</h2>
-
-      </Rotate>
-    </div>
+      </div>
+    </Slide>
   );
 }
 

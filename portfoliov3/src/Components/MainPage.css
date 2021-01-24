@@ -63,9 +63,10 @@ HomeSection
 .homepage-iconContainer {
   margin-top: 40px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
+  width: 90%;
   height: 20%;
   margin-top: auto;
   margin-bottom: 60px;

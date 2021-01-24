@@ -5,11 +5,11 @@ import Commits from "./GraphComponents/ChartCommits.js";
 import Languages from "./GraphComponents/ChartLanguages.js";
 import Time from "./GraphComponents/ChartTime.js";
 
-import { coloursFill, coloursBorder } from "../Assets/colours.js";
+import {colours} from "../Assets/colours.js";
 
 function StatsSection() {
-  let [labelsState, setLabels] = useState({ labelsInfo: [] });
-  let [commitsState, setCommits] = useState({ commitsInfo: [] });
+  let [labelsState, setLabels] = useState({labels: ["test"]});
+  let [commitsState, setCommits] = useState({commits:[0]});
 
   useEffect(() => {
     //Variables
@@ -39,6 +39,7 @@ function StatsSection() {
         }
         setLabels({ labels });
         setCommits({ commits });
+
       });
   }, []);
 
@@ -54,19 +55,19 @@ function StatsSection() {
           <Commits
             commitsState={commitsState}
             labelsState={labelsState}
-            coloursFill={coloursFill}
-            coloursBorder={coloursBorder}
+            coloursFill={colours}
+            coloursBorder={colours}
           />
         </div>
 
         <div className="chartContainer1 glass">
           <h2 className="chartTitle">Languages in my repositories</h2>
-          <Languages coloursFill={coloursFill} coloursBorder={coloursBorder} />
+          <Languages coloursFill={colours} coloursBorder={colours} />
         </div>
 
         <div className="chartContainer1 glass">
           <h2 className="chartTitle">My Commits over time</h2>
-          <Time coloursFill={coloursFill} coloursBorder={coloursBorder} />
+          <Time coloursFill={colours} coloursBorder={colours} />
         </div>
       </div>
     </Slide>

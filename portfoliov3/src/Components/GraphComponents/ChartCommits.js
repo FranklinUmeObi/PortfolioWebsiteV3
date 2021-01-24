@@ -1,27 +1,26 @@
-import React  from "react";
+import React, {useState } from "react";
 import { Doughnut } from "@reactchartjs/react-chart.js";
 
 function ChartCommits(props) {
-
-const data = {
-  labels: props.labelsState,
-  datasets: [
-    {
-      label: "Commits",
-      data: props.commitsState,
-      backgroundColor: props.coloursFill,
-      borderColor: props.coloursBorder,
-      borderWidth: 2,
-    },
-  ],
-};
+  let [data, setData] = useState({ 
+    data: {
+      labels: props.labelsState.labels,
+      datasets: [
+        {
+          label: "Commits",
+          data: props.commitsState.commits,
+          backgroundColor: props.coloursFill,
+          borderColor: props.coloursBorder,
+          borderWidth: 2,
+        },
+      ],
+    } });
 
   return (
-    <div >
-        {props.commitsState !== []
-        ? <h2>Loading...</h2>
-        : <Doughnut data={data} options={{ maintainAspectRatio: false }}/>
-      }
+    <div key={props.commitsState[0]}>
+        
+        <Doughnut data={data.data} options={{ maintainAspectRatio: false }}/>
+      
     </div>
   );
 }

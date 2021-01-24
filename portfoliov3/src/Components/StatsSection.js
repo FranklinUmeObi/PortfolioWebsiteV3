@@ -1,14 +1,15 @@
-import React,{ useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Slide from "react-reveal/Slide";
 
 import Commits from "./GraphComponents/ChartCommits.js";
 import Languages from "./GraphComponents/ChartLanguages.js";
 import Time from "./GraphComponents/ChartTime.js";
 
-function StatsSection() {
+import { coloursFill, coloursBorder } from "../Assets/colours.js";
 
-  let [labelsState, setLabels] = useState({ labelsInfo: []});
-  let [commitsState, setCommits] = useState({ commitsInfo:[] });
+function StatsSection() {
+  let [labelsState, setLabels] = useState({ labelsInfo: [] });
+  let [commitsState, setCommits] = useState({ commitsInfo: [] });
 
   useEffect(() => {
     //Variables
@@ -20,55 +21,52 @@ function StatsSection() {
     //Fetch all my repos
     fetch(url, { options })
       .then((response) => response.json())
-      
+
       .then((data) => {
-        let labels = []
-        let commits = []
-        for (let i = 0; i < data.length; i++) 
-        {
+        let labels = [];
+        let commits = [];
+        for (let i = 0; i < data.length; i++) {
           let name = data[i].name;
-          labels.push(name)
-          
-           let url2 = `https://api.github.com/repos/franklinumeobi/${name}/commits`;
-           fetch(url2, { options })
+          labels.push(name);
+
+          let url2 = `https://api.github.com/repos/franklinumeobi/${name}/commits`;
+          fetch(url2, { options })
             .then((response) => response.json())
-            .then((data2) => 
-            {
-              let commitsInfo = data2.length
-              commits.push(commitsInfo)
+            .then((data2) => {
+              let commitsInfo = data2.length;
+              commits.push(commitsInfo);
             });
         }
         setLabels({ labels });
-        setCommits({commits});
+        setCommits({ commits });
       });
   }, []);
-
-
-
-
-
 
   return (
     <Slide right cascade>
       <div className="section">
-
         <div className="intro glass">
           <h2 className="about-introText">Stats</h2>
         </div>
 
         <div className="chartContainer1 glass">
           <h2 className="chartTitle">Number of commits in my repositories</h2>
-          <Commits commitsState={commitsState} labelsState={labelsState}/>
+          <Commits
+            commitsState={commitsState}
+            labelsState={labelsState}
+            coloursFill={coloursFill}
+            coloursBorder={coloursBorder}
+          />
         </div>
 
         <div className="chartContainer1 glass">
           <h2 className="chartTitle">Languages in my repositories</h2>
-          <Languages />
+          <Languages coloursFill={coloursFill} coloursBorder={coloursBorder} />
         </div>
 
         <div className="chartContainer1 glass">
           <h2 className="chartTitle">My Commits over time</h2>
-          <Time />
+          <Time coloursFill={coloursFill} coloursBorder={coloursBorder} />
         </div>
       </div>
     </Slide>

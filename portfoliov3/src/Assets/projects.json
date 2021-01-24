@@ -25,7 +25,7 @@
         },
         {
             "title": "Laughing Socks",
-            "desc": "An E-Commerce site I built using React. It possess all the main feaatures you would expect a webstore to have (excluding payment)",
+            "desc": "An E-Commerce site I built using React. It possess all the main features you would expect a webstore to have (excluding payment)",
             "image": "LaughingSocks.png",
             "link": "LaughingSocks/build",
             "tags": [

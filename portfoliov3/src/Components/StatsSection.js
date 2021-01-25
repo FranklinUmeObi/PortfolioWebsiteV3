@@ -21,7 +21,6 @@ function StatsSection() {
     //Fetch all my repos
     fetch(url, { options })
       .then((response) => response.json())
-
       .then((data) => {
         let labels = [];
         let commits = [];
@@ -34,6 +33,7 @@ function StatsSection() {
               let commitsInfo = data2.length;
               commits.push(commitsInfo);         
               labels.push(data[i].name);
+              console.log(data2);
             });
         }
         setLabels({ labels });

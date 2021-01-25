@@ -14,7 +14,7 @@ const data = {
       data: [10,31,9,41,29,11,45,40,25,21,27,39,14,11,42,5,13,24,27,36,41,12,44,33,24,13,13,30,45,10,50,35,28,4,38],
       fill: false,
       backgroundColor: 'rgb(255, 255, 255)',
-      borderColor: 'rgba(255, 99, 255, 0.5)',
+      borderColor: 'rgba(255,215,0, 0.8)',
     },
   ],
 }
@@ -24,17 +24,17 @@ const options = {
     yAxes: [
       {
         ticks: {
-          beginAtZero: true,
+          beginAtZero: false,
         },
       },
     ],
   },
 }
 
-function ChartTime() {
+function ChartTime(props) {
     return (
         <div>
-            <Line data={data} />
+            <Line data={data} options = {props.options}/>
         </div>
     )
 }

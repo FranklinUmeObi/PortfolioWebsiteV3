@@ -22,10 +22,10 @@ function ChartCommits(props) {
         
         <Doughnut data={data.data} options={{ maintainAspectRatio: false, legend: {
             labels: {
-                // This more specific font property overrides the global property
                 fontColor: 'white',
                 fontSize: 7,
-            }
+            },
+            //display: false
         } }}/>
       
     </div>

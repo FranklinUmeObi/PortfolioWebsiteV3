@@ -122,7 +122,7 @@ function StatsSection() {
                 if (dates[i] === datesX[j]) commitsPerDay[i]++;
               }
             }
-            commitsPerDay = commitsPerDay.reverse()
+            //commitsPerDay = commitsPerDay.reverse()
             setDatesCom({ commitsPerDay });
 
             for (let j = 0; j < dates.length; j++) {

@@ -12,6 +12,7 @@ function ChartCommits(props) {
           backgroundColor: props.coloursFill,
           borderColor: props.coloursBorder,
           borderWidth: 2,
+          
         },
       ],
     } });
@@ -19,7 +20,13 @@ function ChartCommits(props) {
   return (
     <div key={props.commitsState[0]}>
         
-        <Doughnut data={data.data} options={{ maintainAspectRatio: false }}/>
+        <Doughnut data={data.data} options={{ maintainAspectRatio: false, legend: {
+            labels: {
+                // This more specific font property overrides the global property
+                fontColor: 'white',
+                fontSize: 7,
+            }
+        } }}/>
       
     </div>
   );

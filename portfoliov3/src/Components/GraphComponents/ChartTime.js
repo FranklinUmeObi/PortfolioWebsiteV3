@@ -11,11 +11,25 @@ function ChartTime(props) {
       labels: props.datesState.dates,
       datasets: [
         {
-          label: 'Commits',
+          label: 'Commits Pushed',
           data: props.datesComState.commitsPerDay,
           fill: false,
-          backgroundColor: 'rgb(255,255,255)',
+          backgroundColor: 'rgb(255,255,0)',
           borderColor: 'rgba(127,255,0,0.5)',
+        },
+        {
+          label: 'Pull Requests Merged',
+          data: props.datesMerState.mergePerDay,
+          fill: false,
+          backgroundColor: 'rgb(0,255,255)',
+          borderColor: 'rgba(127,0,255,0.5)',
+        },
+        {
+          label: 'Repo/Branch Created',
+          data: props.datesCreState.createPerDay,
+          fill: false,
+          backgroundColor: 'rgb(255,0,255)',
+          borderColor: 'rgba(255,0,127,0.5)',
         },
       ],
     } });

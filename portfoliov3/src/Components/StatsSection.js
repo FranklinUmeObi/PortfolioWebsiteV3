@@ -8,39 +8,55 @@ import Time from "./GraphComponents/ChartTime.js";
 import { colours } from "../Assets/colours.js";
 
 function StatsSection() {
+  //------------------------------------------------------------------------------
+  //  State
+  //------------------------------------------------------------------------------
+
   let [labelsState, setLabels] = useState({ labels: ["test"] });
   let [commitsState, setCommits] = useState({ commits: [0] });
+
+  let [langDataState, setLangData] = useState({ dataSet: [0] });
+
   let [datesState, setDates] = useState({ dates: ["test"] });
   let [datesComState, setDatesCom] = useState({ datesCom: [0] });
   let [datesMerState, setDatesMer] = useState({ datesMer: [0] });
   let [datesCreState, setDatesCre] = useState({ datesCre: [0] });
 
-  
-
   useEffect(() => {
     //Variables
     const token = process.env.REACT_APP_API_KEY;
-    const headers = { Authorization: "Token " + token };
-    const options = { method: "GET", headers: headers };
-    let url = `https://api.github.com/users/franklinumeobi/repos?per_page=100`;
+    const headers = {
+      Authorization: "token " + token.toString(),
+    };
+    const options = {
+      method: "GET",
+      headers: headers,
+    };
 
+    let url = `https://api.github.com/users/franklinumeobi/repos?per_page=100`;
+    let urlT = "https://api.github.com/rate_limit";
+    //let limit;
     //Fetch all my repos
-    fetch(url, { options })
+    fetch(urlT, { options })
       .then((response) => response.json())
       .then((data) => {
-        getDataForPieChart(data, options);
-        getDataForLineChart(options);
-        
-      
+        //limit = data; //Rate Limit
+
+
+        fetch(url, { options })
+          .then((response) => response.json())
+          .then((data) => {
+            getDataForPieChart(data, options);
+            getDataForBarChart(data, options);
+            getDataForLineChart(options);
+          });
+
+        //console.log(limit);
       });
   }, []);
-
-
-
-
-//------------------------------------------------------------------------------
-//  Functions
-//------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------
+  //  Functions
+  //------------------------------------------------------------------------------
 
   function shuffle(array) {
     var currentIndex = array.length,
@@ -67,11 +83,9 @@ function StatsSection() {
     return dateArray;
   }
 
-
-
- //------------------------------------------------------------------------------
-//  Graph Functions
-//------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------
+  //  Graph Functions
+  //------------------------------------------------------------------------------
 
   function getDataForPieChart(data, options) {
     let labels = [];
@@ -89,6 +103,83 @@ function StatsSection() {
     }
     setLabels({ labels });
     setCommits({ commits });
+  }
+
+  function getDataForBarChart(data, options) {
+    let languages = new Set();
+    let repoLangObj = [];
+    let dataset = [];
+
+    let urlNull = `https://api.github.com/repos/franklinUmeObi/PortfolioWebsiteV3/languages`;
+    fetch(urlNull, { options })
+      .then((response) => response.json())
+      .then((dataNull) => {
+        for (let i = 0; i < data.length; i++) {
+          let numL = languages.size;
+
+          let url = `https://api.github.com/repos/franklinUmeObi/${data[i].name}/languages`;
+          fetch(url, { options })
+            .then((response) => response.json())
+            .then((data2) => {
+              repoLangObj.push(data2);
+              let keyArr = Object.keys(data2);
+              for (let j = 0; j < keyArr.length; j++) languages.add(keyArr[j]);
+
+              //Move bottom code here
+
+              if (languages.size !== numL) {
+                let l = Array.from(languages);
+                for (let ii = 0; ii < l.length; ii++) {
+                  let obj = {
+                    label: l[ii],
+                    data: [],
+                    backgroundColor: colours[ii],
+                  };
+
+                  for (let j = 0; j < repoLangObj.length; j++) {
+                    //console.log(repoLangObj[j]);
+                    //console.log(l[ii]);
+                    if (l[ii] in repoLangObj[j]) {
+                      let codeLanguage = l[ii];
+                      //console.log(codeLanguage);//Lang as String
+
+                      let num = repoLangObj[j][codeLanguage] / 1000;
+                      //console.log(num);// value associated with lang
+
+                      obj.data.push(num);
+                    } else obj.data.push(0);
+                  }
+                  if (obj.data.length === 28) dataset.push(obj);
+
+                  //console.log(dataset);
+                  if (dataset.length === languages.size) {
+                    //At end of the fetches
+                    // for (let i = 0; i < dataset.length; i++) 
+                    // {
+                    //   let singleLang = [];
+                    //   for (let i2 = 0; i2 < dataset.length; i2++) 
+                    //   {
+                    //     singleLang.push(dataset[i2].data[i]);
+                    //   }
+                    //   console.log(singleLang);
+
+                    //   let numbers = singleLang,
+                    //     ratio = Math.max.apply(Math, numbers) / 100,
+                    //     le = numbers.length,
+                    //     j;
+                    //   for (j = 0; j < le; j++) 
+                    //   {       
+                    //       dataset[j].data[i] = Math.round(numbers[j] / ratio);
+                    //   }
+                    // }
+                    console.log(dataset);
+                    setLangData({ dataset });
+                  }
+                }
+              }
+            });
+        }
+      });
   }
 
   function getDataForLineChart(options) {
@@ -168,11 +259,10 @@ function StatsSection() {
       });
   }
 
-//------------------------------------------------------------------------------
-//  Variables
-//------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------
+  //  Variables
+  //------------------------------------------------------------------------------
   let randomColours = shuffle(colours);
-
 
   return (
     <Slide right cascade>
@@ -194,13 +284,15 @@ function StatsSection() {
         <div className="chartContainer1 glass">
           <h2 className="chartTitle">Languages in my repositories</h2>
           <Languages
+            labelsState={labelsState}
             coloursFill={randomColours}
             coloursBorder={randomColours}
+            langDataState={langDataState}
           />
         </div>
 
         <div className="chartContainer1 glass">
-          <h2 className="chartTitle">My last ~3 months of Commit Activity</h2>
+          <h2 className="chartTitle">My last ~3 months of Github Activity</h2>
           <Time
             coloursFill={randomColours}
             coloursBorder={randomColours}

@@ -281,7 +281,7 @@ function StatsSection() {
         </div>
 
         <div className="chartContainer1 glass">
-          <h2 className="chartTitle">Languages Makeup of my repositories</h2>
+          <h2 className="chartTitle">Language Makeup of my repositories</h2>
           <Languages
             namesState={namesState}
             coloursFill={randomColours}

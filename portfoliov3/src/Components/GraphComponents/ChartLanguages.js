@@ -6,13 +6,18 @@ import { Bar  } from '@reactchartjs/react-chart.js'
 
 
 function ChartLanguages(props) {
-  
 const data = {
-  labels: props.labelsState.labels,
+  labels: props.namesState.names,
   datasets: props.langDataState.dataset,
 }
 
 const options = {
+  legend: {
+    labels: {
+        fontColor: 'white',
+        fontSize: 9,
+    },
+  },
   scales: {
     yAxes: [
       {

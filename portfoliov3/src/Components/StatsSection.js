@@ -16,6 +16,7 @@ function StatsSection() {
   let [commitsState, setCommits] = useState({ commits: [0] });
 
   let [langDataState, setLangData] = useState({ dataSet: [0] });
+  let [namesState, setNames] = useState({ names: ["test"] });
 
   let [datesState, setDates] = useState({ dates: ["test"] });
   let [datesComState, setDatesCom] = useState({ datesCom: [0] });
@@ -101,6 +102,7 @@ function StatsSection() {
           labels.push(data[i].name);
         });
     }
+    console.log(labels);
     setLabels({ labels });
     setCommits({ commits });
   }
@@ -109,6 +111,7 @@ function StatsSection() {
     let languages = new Set();
     let repoLangObj = [];
     let dataset = [];
+    let names = []
 
     let urlNull = `https://api.github.com/repos/franklinUmeObi/PortfolioWebsiteV3/languages`;
     fetch(urlNull, { options })
@@ -125,55 +128,51 @@ function StatsSection() {
               let keyArr = Object.keys(data2);
               for (let j = 0; j < keyArr.length; j++) languages.add(keyArr[j]);
 
-              //Move bottom code here
-
               if (languages.size !== numL) {
                 let l = Array.from(languages);
                 for (let ii = 0; ii < l.length; ii++) {
                   let obj = {
                     label: l[ii],
                     data: [],
-                    backgroundColor: colours[ii],
+                    backgroundColor: colours[2*ii],
                   };
 
                   for (let j = 0; j < repoLangObj.length; j++) {
-                    //console.log(repoLangObj[j]);
-                    //console.log(l[ii]);
                     if (l[ii] in repoLangObj[j]) {
                       let codeLanguage = l[ii];
-                      //console.log(codeLanguage);//Lang as String
-
                       let num = repoLangObj[j][codeLanguage] / 1000;
-                      //console.log(num);// value associated with lang
-
-                      obj.data.push(num);
+                      obj.data.push(num); 
                     } else obj.data.push(0);
                   }
                   if (obj.data.length === 28) dataset.push(obj);
-
-                  //console.log(dataset);
                   if (dataset.length === languages.size) {
-                    //At end of the fetches
-                    // for (let i = 0; i < dataset.length; i++) 
-                    // {
-                    //   let singleLang = [];
-                    //   for (let i2 = 0; i2 < dataset.length; i2++) 
-                    //   {
-                    //     singleLang.push(dataset[i2].data[i]);
-                    //   }
-                    //   console.log(singleLang);
+                    for (let repoI = 0; repoI < dataset[0].data.length; repoI++) 
+                    {
+                      let singleLang = [];
+                      for (let i = 0; i < dataset.length; i++) 
+                      {
+                        singleLang.push(dataset[i].data[repoI]);
+                      }
+                      let numbers = singleLang
+                      let sum = 0
+                      for (let j = 0; j < singleLang.length; j++) 
+                        {       
+                            sum += numbers[j]
+                        }
+                      
+                        for (let j = 0; j < singleLang.length; j++) 
+                        {       
+                            dataset[j].data[repoI] = 100* numbers[j]/sum;
+                        }
 
-                    //   let numbers = singleLang,
-                    //     ratio = Math.max.apply(Math, numbers) / 100,
-                    //     le = numbers.length,
-                    //     j;
-                    //   for (j = 0; j < le; j++) 
-                    //   {       
-                    //       dataset[j].data[i] = Math.round(numbers[j] / ratio);
-                    //   }
-                    // }
-                    console.log(dataset);
+                    }
                     setLangData({ dataset });
+
+                    for (let t = 0; t < data.length; t++) {
+                      names.push("Repo " + t)
+                      
+                    }
+                    setNames({names})
                   }
                 }
               }
@@ -282,9 +281,9 @@ function StatsSection() {
         </div>
 
         <div className="chartContainer1 glass">
-          <h2 className="chartTitle">Languages in my repositories</h2>
+          <h2 className="chartTitle">Languages Makeup of my repositories</h2>
           <Languages
-            labelsState={labelsState}
+            namesState={namesState}
             coloursFill={randomColours}
             coloursBorder={randomColours}
             langDataState={langDataState}
